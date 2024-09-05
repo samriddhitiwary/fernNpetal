@@ -1,0 +1,12 @@
+
+
+.CuratedGifts_grid_img_2 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .CuratedGifts_grid_img_2:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9); 
+  }
+  

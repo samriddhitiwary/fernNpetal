@@ -1,0 +1,36 @@
+.Best_Seller_grid_2 {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0; 
+    scroll-snap-type: x mandatory; 
+  }
+  
+  .Best_Seller_grid_img_2 {
+    flex: 0 0 auto; 
+    margin-right: 10px; 
+    scroll-snap-align: start; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .Best_Seller_grid_img_2:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .Best_Seller_div {
+    overflow-x: hidden; 
+  }
+  
+.Best_Seller_div{
+    background-color: aliceblue;
+}
+.Best_Sellers_btn{
+    margin-left: 2%;
+    background-color: #6a6e66;
+}
+.Best_Seller_Heading{
+    font-weight: bold;
+    font-size: 1.5rem;
+   
+}
