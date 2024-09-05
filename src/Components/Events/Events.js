@@ -46,7 +46,7 @@ const Events = () => {
                 </div>
 
                 <div className='Event_div'>
-                    <Link to="/ganesh-chaturthi">
+                    <Link to="/home-living">
                         <img src='images/Events/img6.jpg' className='Event_img' alt="Ganesh Chaturthi" />
                     </Link>
                     <p><b>Home N Living</b></p>

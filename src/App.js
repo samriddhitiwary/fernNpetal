@@ -25,6 +25,7 @@ import TeachersDay from './pages/TeachersDay';
 import HomeLiving from './pages/HomeLiving';
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function MainApp() {
           <Plants />
         </>
       )}
+      <Footer/>
     </>
   );
 }
