@@ -19,7 +19,7 @@ const Gift_In_Trend = () => {
             
             <div className='CuratedGifts_grid_2'>
                 <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                    <Card style={ {width: '15rem',marginLeft:'2%',marginBottom:'1%'}}>
                         <Card.Img variant="top" src="images/Gift_In_Trend/img1.webp" />
                         <Card.Body>
                             
@@ -36,7 +36,7 @@ const Gift_In_Trend = () => {
                 </div>
 
                 <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                    <Card style={ {width: '15rem',marginLeft:'2%',marginBottom:'2%'}}>
                         <Card.Img variant="top" src="images/Gift_In_Trend/img2.webp" />
                         <Card.Body>
                             
@@ -53,7 +53,7 @@ const Gift_In_Trend = () => {
 
 
                 <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                    <Card style={ {width: '15rem',marginLeft:'2%',marginBottom:'2%'}}>
                         <Card.Img variant="top" src="images/Gift_In_Trend/img3.webp" />
                         <Card.Body>
                             
@@ -70,7 +70,7 @@ const Gift_In_Trend = () => {
 
 
                 <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                    <Card style={ {width: '15rem',marginLeft:'2%',marginBottom:'2%'}}>
                         <Card.Img variant="top" src="images/Gift_In_Trend/img4.webp" />
                         <Card.Body>
                             
@@ -87,7 +87,7 @@ const Gift_In_Trend = () => {
 
 
                 <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                    <Card style={ {width: '15rem',marginLeft:'2%',marginBottom:'2%'}}>
                         <Card.Img variant="top" src="images/Gift_In_Trend/img5.webp" />
                         <Card.Body>
                             

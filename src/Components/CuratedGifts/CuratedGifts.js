@@ -26,21 +26,23 @@ const CuratedGifts = () => {
             <br></br>
 
             <div className='CuratedGifts_grid_2'>
-                <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                <div className='CuratedGifts_grid_img_2' >
+                    <Card style={{ width: '15rem',marginLeft:'2%',marginBottom:'2%'} }>
                         <Card.Img variant="top" src="images/CuratedGifts/img3.webp" />
-                        <Card.Body>
+                        <Card.Body >
                             
                             <Card.Text>
-                                Unleash their inner fashionista with Fashion 
+                                 
+                              Unleash their inner fashionista with Fashion
                             </Card.Text>
                             
                         </Card.Body>
                     </Card>
                 </div>
+                
 
                 <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                    <Card style={{ width: '15rem',marginLeft:'2%',marginBottom:'2%' }}>
                         <Card.Img variant="top" src="images/CuratedGifts/img4.webp" />
                         <Card.Body>
                             
@@ -54,7 +56,7 @@ const CuratedGifts = () => {
 
 
                 <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                    <Card style={{ width: '15rem',marginLeft:'2%',marginBottom:'2%' }}>
                         <Card.Img variant="top" src="images/CuratedGifts/img5.webp" />
                         <Card.Body>
                             
@@ -68,7 +70,7 @@ const CuratedGifts = () => {
 
 
                 <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                    <Card style={{ width: '15rem',marginLeft:'2%',marginBottom:'2%' }}>
                         <Card.Img variant="top" src="images/CuratedGifts/img6.webp" />
                         <Card.Body>
                             
@@ -82,7 +84,7 @@ const CuratedGifts = () => {
 
 
                 <div className='CuratedGifts_grid_img_2'>
-                    <Card style={{ width: '15rem' }}>
+                    <Card style={{ width: '15rem',marginLeft:'2%',marginBottom:'2%' }}>
                         <Card.Img variant="top" src="images/CuratedGifts/img7.webp" />
                         <Card.Body>
                             

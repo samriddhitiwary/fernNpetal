@@ -6,7 +6,7 @@ const Events = () => {
     return (
         <>
             <div className='Event'>
-                {/* Each div now has a Link to its corresponding page */}
+               
                 
                 <div className='Event_div'>
                     <Link to="/birthday">
@@ -36,7 +36,7 @@ const Events = () => {
                     <p><b>Home & Living</b></p>
                 </div>
 
-                {/* Add more divs with Link components for other events */}
+               
                 
                 <div className='Event_div'>
                     <Link to="/2-hour-delivery">
