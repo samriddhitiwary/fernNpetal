@@ -1,66 +1,39 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Events.css';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./Events.css";
 
 const Events = () => {
-    return (
-        <>
-            <div className='Event'>
-               
-                
-                <div className='Event_div'>
-                    <Link to="/birthday">
-                        <img src='images/Events/img1.jpg' className='Event_img' alt="Birthday" />
-                    </Link>
-                    <p style={{ marginLeft: '20%' }}><b>Birthday</b></p>
-                </div>
+  const [eventAssets, setEventAssets] = useState([]);
+  const awsUrl = "https://fernnpatel.s3.ap-south-1.amazonaws.com";
+  const assetUrl = awsUrl + "/assets/eventsAssets.json";
 
-                <div className='Event_div'>
-                    <Link to="/rakhi-gifts">
-                        <img src='images/Events/img2.webp' className='Event_img' alt="Rakhi Gifts" />
-                    </Link>
-                    <p><b>Rakhi Gifts</b></p>
-                </div>
 
-                <div className='Event_div'>
-                    <Link to="/teachers-day">
-                        <img src='images/Events/img3.webp' className='Event_img' alt="Teacher's Day" />
-                    </Link>
-                    <p><b>Teacher's Day</b></p>
-                </div>
+  useEffect(() => {
 
-                <div className='Event_div'>
-                    <Link to="/home-living">
-                        <img src='images/Events/img4.jpg' className='Event_img' alt="Home & Living" />
-                    </Link>
-                    <p><b>Home & Living</b></p>
-                </div>
+    fetch(assetUrl)
+    .then(response => response.json())
+    .then(jsonData => { 
+        jsonData.map((asset) => {
+            asset.img = awsUrl + '/' + asset.img;
+        });
+        setEventAssets(jsonData)
+    });
+  },[]);
 
-               
-                
-                <div className='Event_div'>
-                    <Link to="/2-hour-delivery">
-                        <img src='images/Events/img5.jpg' className='Event_img' alt="2-Hr Del" />
-                    </Link>
-                    <p><b>2-Hour Delivery</b></p>
-                </div>
-
-                <div className='Event_div'>
-                    <Link to="/home-living">
-                        <img src='images/Events/img6.jpg' className='Event_img' alt="Ganesh Chaturthi" />
-                    </Link>
-                    <p><b>Home N Living</b></p>
-                </div>
-
-                <div className='Event_div'>
-                    <Link to="/flowers">
-                        <img src='images/Events/img7.webp' className='Event_img' alt="Flowers" />
-                    </Link>
-                    <p><b>Flowers</b></p>
-                </div>
-            </div>
-        </>
-    );
-}
+  return (
+    <div className="Event">
+      {eventAssets.map((event) => (
+        <div className="Event_div">
+          <Link to="/birthday">
+            <img src={event.img} className="Event_img" alt={event.desc} />
+          </Link>
+          <p style={{ marginLeft: "20%" }}>
+            <b>{event.desc}</b>
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default Events;
