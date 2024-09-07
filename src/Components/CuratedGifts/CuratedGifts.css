@@ -1,84 +1,85 @@
-.CuratedGifts_Heading{
+.CuratedGifts_Heading {
     font-weight: bold;
     font-size: 1.5rem;
-   
-    
-
 }
-.CuratedGifts_div{
+
+.CuratedGifts_div {
     background-color: whitesmoke;
-    
     padding: 1%;
 }
 
-.CuratedGifts_Heading_div{
+.CuratedGifts_Heading_div {
     margin-top: 1rem;
-   
-}
-.CuratedGifts_btn{
-    margin-left: 2%;
-    background-color: #6a6e66;
-    
 }
 
-.CuratedGifts_image_grid{
+.CuratedGifts_btn {
+    margin-left: 2%;
+    background-color: #6a6e66;
+}
+
+.CuratedGifts_image_grid {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
-   
-    
 }
-/* .CuratedGifts_grid_img_2{
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
-} */
-.CuratedGifts_img_div{
+.CuratedGifts_img_div {
     display: flex;
-}
-/* .CuratedGifts_grid_img_2{
-    display: flex;
-} */
-.CuratedGifts_grid_img_2{
-    cursor: pointer;
-  
-
-}
-.CuratedGifts_img_div:hover{
-    cursor: pointer;
-    
+    justify-content: center; 
 }
 
-.CuratedGifts_img_item{
-    width: 90%;
+.CuratedGifts_grid_img_2 {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.CuratedGifts_grid_img_2:hover {
+    transform: scale(1.05); 
+}
+
+.CuratedGifts_img_item {
+    width: 100%; 
     height: auto;
-    
-}
+    object-fit: cover; }
 
 .CuratedGifts_grid_2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    gap: 10px; 
-    object-fit: cover;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 
-.CuratedGifts_grid_img_2 {
-    /* flex: 1 1 calc(20% - 10px); */
-    box-sizing: border-box; 
-    object-fit: cover;
+.Card {
+    width: 100%;
+    min-height: 100px; 
+    overflow: visible; 
+    background-color: white; 
+}
+
+.Card .Card-Body {
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.Card .Card-Text {
+    font-size: 1rem;
+    color: #333; 
+    margin: 0; 
+    line-height: 1.5;
 }
 
 @media (max-width: 768px) {
     .CuratedGifts_grid_img_2 {
-        /* flex: 1 1 calc(50% - 10px);  */
+        /* Adjust layout for tablet */
     }
 }
 
 @media (max-width: 480px) {
     .CuratedGifts_grid_img_2 {
-        flex: 1 1 calc(100% - 10px); 
+        flex: 1 1 calc(100% - 10px);
     }
 }

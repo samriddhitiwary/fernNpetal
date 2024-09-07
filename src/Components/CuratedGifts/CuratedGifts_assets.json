@@ -1,0 +1,28 @@
+[
+    {
+        "id":1,
+        "img":"images/CuratedGifts/img3.webp",
+        "desc":"Unleash their inner fashionista with Fashion"
+    },
+    {
+        "id":2,
+        "img":"images/CuratedGifts/img4.webp",
+        "desc":"Double the surprise with paired Gift Combos"
+    },
+    {
+        "id":3,
+        "img":"images/CuratedGifts/img5.webp",
+        "desc":"Create magical moments with Experiential Gifts"
+    },
+    {
+        "id":4,
+        "img":"images/CuratedGifts/img6.webp",
+        "desc":"Never fall short of surprise with our big Gift Range"
+    },
+    {
+        "id":5,
+        "img":"images/CuratedGifts/img7.webp",
+        "desc":" Let them relish each moment with a Cake from you"
+    }
+    
+]
