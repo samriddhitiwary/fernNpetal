@@ -20,6 +20,7 @@ import Gift_Stories from './Components/Gift_Stories/Gift_Stories';
 import Plants from './Components/Plants/Plants';
 
 import Birthday from './pages/Birthday';
+import Products from './pages/Products';
 import RakhiGifts from './pages/RakhiGifts';
 import TeachersDay from './pages/TeachersDay';
 import HomeLiving from './pages/HomeLiving';
@@ -50,10 +51,11 @@ function MainApp() {
         <Route path="/" element={<Events />} />
 
        
-        <Route path="/birthday" element={<Birthday />} />
-        <Route path="/rakhi-gifts" element={<RakhiGifts />} />
-        <Route path="/teachers-day" element={<TeachersDay />} />
-        <Route path="/home-living" element={<HomeLiving />} />
+        <Route path="/birthday" element={<Products title="Birthday Gifts"/>} />
+        <Route path="/rakhi-gifts" element={<Products title="Rakhi Gifts" />} />
+        <Route path="/teachers-day" element={<Products title="Gifts for Your teacher"/>} />
+        <Route path="/home-living" element={<Products title="Gifts for Your home"/>} />
+        <Route path="/products" element={<Products title="Gifts for your special one" />} />
       </Routes>
 
       

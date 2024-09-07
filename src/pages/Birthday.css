@@ -1,69 +1,75 @@
 .Birthday_Container{
-    background-color: aliceblue;
+  background-color: aliceblue;
 }
 
 /* Birthday.css */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.mycard {
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+
+img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.image.active {
+  opacity: 1;
+}
+
+.card:hover .image {
+  animation: slide 10s infinite;
+}
+
+.mycardbottomtext {
+  font-size: 10px;
+}
+
+ /* @keyframes slide {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .card {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%; /* Make it square */
-    overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
-  
-  .image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.4s ease-in-out;
-    opacity: 0;
-  }
-  
-  .image.active {
-    opacity: 1;
-  }
-  
-  .card:hover .image {
-    animation: slide 10s infinite;
-  }
-  
-  @keyframes slide {
-    0% { opacity: 1; }
-    25% { opacity: 0; }
-    50% { opacity: 0; }
-    75% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}  */

@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "img": "images/Events/img1.jpg",
+      "desc": "Birthday",
+      "productLink" : "birthday"
+    },
+    {
+      "id": 2,
+      "img": "images/Events/img2.webp",
+      "desc": "Rakhi Gifts",
+      "productLink" : "rakhi-gifts"
+    },
+    {
+      "id": 3,
+      "img": "images/Events/img3.webp",
+      "desc": "Teacher's Day",
+      "productLink" : "teachers-day"
+    },
+    {
+      "id": 4,
+      "img": "images/Events/img4.jpg",
+      "desc": "Home: Two Hours Delivery",
+      "productLink" : "home-living"
+    },
+    {
+      "id": 5,
+      "img": "images/Events/img5.jpg",
+      "desc": "Home & Living",
+      "productLink" : "products"
+    },
+    {
+      "id": 6,
+      "img": "images/Events/img6.jpg",
+      "desc": "Ganesh Chaturthi",
+      "productLink" : "products"
+    }
+  ]

@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "productName": "Mixed Rose Cake",
+      "img": "images/Bakery_Cakes/img1.webp",
+      "price": 100,
+      "review": "4.3",
+      "deliverTime": "Earliest Today"
+    },
+    {
+      "id": 2,
+      "productName": "Mixed Rose Cake",
+      "img": "images/Bakery_Cakes/img2.webp",
+      "price": 100,
+      "review": "4.3",
+      "deliverTime": "Earliest Tomorrow"
+    },
+    {
+      "id": 3,
+      "productName": "Mixed Rose Cake",
+      "img": "images/Bakery_Cakes/img3.webp",
+      "price": 100,
+      "review": "4.3",
+      "deliverTime": "Earliest Today"
+    },
+    {
+      "id": 4,
+      "productName": "Mixed Rose Cake",
+      "img": "images/Bakery_Cakes/img4.webp",
+      "price": 100,
+      "review": "4.3",
+      "deliverTime": "Earliest Today"
+    },
+    {
+      "id": 5,
+      "productName": "Black Forest Cake",
+      "img": "images/Best_Seller/img1.webp",
+      "price": 200,
+      "review": "4.4",
+      "deliverTime": "Earliest Today"
+    },
+    {
+      "id": 6,
+      "productName": "Black Forest Cake",
+      "img": "images/Best_Seller/img2.webp",
+      "price": 200,
+      "review": "4.4",
+      "deliverTime": "Earliest Today"
+    },
+    {
+      "id": 7,
+      "productName": "Black Forest Cake",
+      "img": "images/Best_Seller/img3.webp",
+      "price": 200,
+      "review": "4.4",
+      "deliverTime": "Earliest Today"
+    },
+    {
+      "id": 8,
+      "productName": "Black Forest Cake",
+      "img": "images/Best_Seller/img4.webp",
+      "price": 200,
+      "review": "4.4",
+      "deliverTime": "Earliest Today"
+    },
+    {
+      "id": 9,
+      "productName": "Black Forest Cake",
+      "img": "images/Best_Seller/img5.webp",
+      "price": 200,
+      "review": "4.4",
+      "deliverTime": "Earliest Today"
+    },
+    {
+      "id": 10,
+      "productName": "Black Forest Cake",
+      "img": "images/Best_Seller/img6.webp",
+      "price": 200,
+      "review": "4.4",
+      "deliverTime": "Earliest Today"
+    }
+  ]
