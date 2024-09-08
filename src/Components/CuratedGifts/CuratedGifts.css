@@ -81,5 +81,6 @@
 @media (max-width: 480px) {
     .CuratedGifts_grid_img_2 {
         flex: 1 1 calc(100% - 10px);
+        margin-left: 20%;
     }
 }
