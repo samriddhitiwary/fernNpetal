@@ -1,9 +1,16 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Button, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './Pick_thier_Fav.css';
 
 const Pick_thier_Fav = () => {
+    const navigate = useNavigate();
+
+  const handleViewAllClick = () => {
+    console.log('Button clicked!'); 
+    navigate('/products'); 
+  };
     return (
         <div>
             <br />
@@ -12,7 +19,7 @@ const Pick_thier_Fav = () => {
                 <div className='Pick_thier_Fav_Heading_div'>
                     <p className='Pick_thier_Fav_Heading'>
                         Pick Their Favourite
-                        <Button variant="success" className='Pick_thier_Fav_btn'>VIEW ALL</Button>
+                        <Button variant="success" className='Pick_thier_Fav_btn' onClick={handleViewAllClick}>VIEW ALL</Button>
                     </p>
                 </div>
 

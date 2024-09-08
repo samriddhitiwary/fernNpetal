@@ -2,8 +2,15 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Button, Container } from 'react-bootstrap';
 import './Birthday_Collection.css';
+import { useNavigate } from 'react-router-dom';
 
 const Birthday_Collection = () => {
+  const navigate = useNavigate(); 
+
+  const handleViewAllClick = () => {
+    navigate('/products'); 
+}
+  
   return (
     <div>
       <br />
@@ -12,7 +19,7 @@ const Birthday_Collection = () => {
         <div className='CuratedGifts_Heading_div'>
           <p className='CuratedGifts_Heading'>
             The 2024 Birthday Collection
-            <Button variant="success" className='CuratedGifts_btn'>VIEW ALL</Button>
+            <Button variant="success" className='CuratedGifts_btn' onClick={handleViewAllClick}>VIEW ALL</Button>
           </p>
         </div>
 

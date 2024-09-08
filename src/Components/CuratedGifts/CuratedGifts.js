@@ -2,32 +2,38 @@ import React, { useEffect, useState } from 'react';
 import { Button, Container } from 'react-bootstrap';
 import './CuratedGifts.css';
 import Card from 'react-bootstrap/Card';
-// https://fernnpatel.s3.ap-south-1.amazonaws.com/assets/CuratedGifts_assets.json
+import { useNavigate } from 'react-router-dom';
 
 const CuratedGifts = () => {
+    const navigate = useNavigate();
+    const [curatedGiftsAssets, setCuratedGiftsAssets] = useState([]); // Declare state here
 
-    const [curatedGiftsAssets, setCuratedGiftsAssets] = useState([]);
     const awsUrl = "https://fernnpatel.s3.ap-south-1.amazonaws.com";
     const assetUrl = awsUrl + "/assets/CuratedGifts_assets.json";
 
+    // Fetch the curated gifts data when the component mounts
     useEffect(() => {
         fetch(assetUrl)
             .then(response => response.json())
             .then(jsonData => {
-                jsonData.map((asset) => {
+                const updatedData = jsonData.map((asset) => {
                     asset.img = awsUrl + '/' + asset.img;
-                    return asset; 
+                    return asset;
                 });
-                setCuratedGiftsAssets(jsonData);
+                setCuratedGiftsAssets(updatedData); // Set the updated data
             });
-    }, []);
+    }, []); // Empty dependency array to run this only once
+
+    const handleViewAllClick = () => {
+        navigate('/products'); // Navigate to the products page on button click
+    };
 
     return (
         <Container className='CuratedGifts_div'>
             <div className='CuratedGifts_Heading_div'>
                 <p className='CuratedGifts_Heading'>
-                    Thoughtfully Curated Gifts 
-                    <Button variant="success" className='CuratedGifts_btn'>
+                    Thoughtfully Curated Gifts
+                    <Button variant="success" className='CuratedGifts_btn' onClick={handleViewAllClick}>
                         VIEW ALL
                     </Button>
                 </p>

@@ -24,6 +24,8 @@ import Products from './pages/Products';
 import RakhiGifts from './pages/RakhiGifts';
 import TeachersDay from './pages/TeachersDay';
 import HomeLiving from './pages/HomeLiving';
+import { useNavigate } from 'react-router-dom';
+
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
@@ -37,7 +39,7 @@ function App() {
 }
 
 function MainApp() {
-  const location = useLocation(); // Get the current route
+  const location = useLocation(); 
 
   return (
     <>
