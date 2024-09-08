@@ -1,4 +1,3 @@
-
 .info {
   padding-left: 68%;
   color: white;
@@ -81,4 +80,58 @@
   .Item {
       width: 100%;
   }
+}
+
+.myborder {
+  border: 1px solid red;
+  background-color: #7d8035;
+}
+
+.middle-bar-container {
+  background-color: #7d8035;
+  height: 75px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.middle-bar-container > div {
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  vertical-align:auto;
+}
+
+.middle-bar-container-img {
+  height: 60%;
+  width: 60%;
+  justify-content: center;
+  position: relative;
+}
+
+input[type=text] {
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  height: 50%;
+  background-image: url('../../../public/images/Header/searchIcon.png');
+  background-position: 350px 5px; 
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 12px 20px 12px 40px;
+  /* top: 25%; */
+}
+
+.searh-del-loc {
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  color: gray;
+  border: 1px solid black;
+  margin: auto;
 }

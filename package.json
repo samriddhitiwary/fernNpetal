@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "fernpetal": "file:",
     "leaflet": "^1.9.4",
     "react": "^18.3.1",
